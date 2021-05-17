@@ -1,10 +1,10 @@
 :root{
-    --bg: #136;
-    --bg-accent: #247;
-    --fg: #9ef;
-    --cell-bg: #368;
-    --new-icon-bg: #fff;
-    --new-icon-fg: var(--bg);
+    --bg: #213;
+    --bg-accent: #435;
+    --fg: #cad;
+    --cell-bg: #324;
+    --new-icon-bg: var(--fg);
+    --new-icon-fg: var(--cell-bg);
 }
 
 body, html{
@@ -118,7 +118,7 @@ body{
 }
 
 .new-button-icon{
-    --size: 100px;
+    --size: 250px;
     width: var(--size);
     height: var(--size);
     background: var(--new-icon-bg);
@@ -140,6 +140,11 @@ body{
 
 .new-button-icon::after{
     transform: translate(-50%, -50%) rotate(0.25turn);
+}
+
+.new-button:hover{
+    --new-icon-bg: var(--bg-accent);
+    --new-icon-fg: var(--bg);
 }
 
 @media only screen and (min-width: 600px){
