@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Modular Tallies</title>
+        <meta name="viewport" content="width=device-width">
+        <link href="index.css" type="text/css" rel="stylesheet">
+        <script src="index.js" defer></script>
+    </head>
+    <template id=tally-template>
+        <div class="cell tally">
+            <input class="tally-name" value="Tally "></input>
+            <div class="delete-button" onclick="delete_tally(this.parentElement)"></div>
+            <div class="tally-counter" onclick="increment_innerHTML(this)">0</div>
+        </div>
+    </template>
+    <body>
+        <div id=tally-grid>
+            <div class="cell new-button" onclick="add_tally()">
+                <div class="new-button-icon"></div>
+            </div>
+        </div>
+    </body>
+</html>
