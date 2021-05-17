@@ -19,10 +19,12 @@ function make_tally(name, count){
 
 function add_tally(name, count){
     tally_grid.insertBefore(make_tally(name, count), new_button)
+    save_to_cookies()
 }
 
 function delete_tally(node){
     tally_grid.removeChild(node);
+    save_to_cookies()
 }
 
 function set_cookie(key, value){
@@ -39,6 +41,7 @@ function get_cookie(key){
 
 function increment_innerHTML(node){
     node.innerHTML = (parseInt(node.innerHTML) + 1).toString();
+    save_to_cookies()
 }
 
 function save_to_cookies(){

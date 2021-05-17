@@ -3,6 +3,8 @@
     --bg-accent: #247;
     --fg: #9ef;
     --cell-bg: #368;
+    --new-icon-bg: #fff;
+    --new-icon-fg: var(--bg);
 }
 
 body, html{
@@ -26,7 +28,6 @@ body{
 .cell{
     background: var(--cell-bg);
     padding: 15px;
-    padding-left: 55px;
     border-radius: 15px;
     text-align: center;
     position: relative;
@@ -96,6 +97,7 @@ body{
     justify-content: center;
     align-items: center;
     background: var(--bg-accent);
+    color: var(--fg);
     padding: 15px;
     border-radius: 15px;
     font-size: 5em;
@@ -119,7 +121,7 @@ body{
     --size: 100px;
     width: var(--size);
     height: var(--size);
-    background: #fff;
+    background: var(--new-icon-bg);
     border-radius: 50%;
     position: relative;
 }
@@ -132,7 +134,7 @@ body{
     top: 50%;
     width: 80%;
     height: 20%;
-    background: var(--bg);
+    background: var(--new-icon-fg);
     transform: translate(-50%, -50%);
 }
 
