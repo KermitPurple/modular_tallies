@@ -8,7 +8,7 @@
     </head>
     <template id=tally-template>
         <div class="cell tally">
-            <input class="tally-name" value="Tally "></input>
+            <input class="tally-name" value="Tally " oninput="save_to_cookies()"></input>
             <div class="delete-button" onclick="delete_tally(this.parentElement)"></div>
             <div class="tally-counter" onclick="increment_innerHTML(this)">0</div>
         </div>
